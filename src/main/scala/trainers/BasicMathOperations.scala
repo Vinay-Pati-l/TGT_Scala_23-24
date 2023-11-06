@@ -1,3 +1,5 @@
+package trainers
+
 class BasicMathOperations {
 
   def add(firstValue: Int, secondValue: Int) = {
