@@ -4,6 +4,7 @@ import org.scalatest.flatspec.AnyFlatSpec
 
 class TGTrainingTest extends AnyFlatSpec {
   val tgtTraining = new TGTraining()
+
   "Add function" should "add two numbers" in{
     assert(tgtTraining.add(5,9) ==14)
   }

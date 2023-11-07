@@ -4,36 +4,36 @@ import scala.util.{Failure, Success, Try}
 
 class TGTraining {
   //  Function to add
-  def add(a: Double, b: Double): Double = a + b
+  def add(firstNum: Double, secondNum: Double): Double = firstNum + secondNum
 
   //  Function to subtract
-  def subtract(a: Double, b: Double): Double = a - b
+  def subtract(firstNum: Double, secondNum: Double): Double = firstNum - secondNum
 
   //  Function to multiply
-  def multiply(a: Double, b: Double): Double = a * b
+  def multiply(firstNum: Double, secondNum: Double): Double = firstNum * secondNum
 
   //  Function to divide
-  def divideTryCatch(a: Int, b: Int): Int = {
+  def divideTryCatch(firstNum: Int, secondNum: Int): Int = {
     // Handling Exception Using Try Catch Block
-    Try(a/b)
+    Try(firstNum/secondNum)
     match {
-      case Success(value) => value
+      case Success(result) => result
       case Failure(e) =>
         println("Divide by Zero Exception!")
         Int.MinValue
     }
   }
 
-  def divideEither(a: Int, b: Int): Either[Exception,Int] = {
+  def divideEither(firstNum: Int, secondNum: Int): Either[Exception,Int] = {
     // Handling Exception Using Either[A,B]
-    if(b==0) Left(new ArithmeticException())
-    else Right(a/b)
+    if(secondNum==0) Left(new ArithmeticException())
+    else Right(firstNum/secondNum)
   }
 
-  def divideIfElse(a: Int, b: Int): Option[Int] = {
+  def divideIfElse(firstNum: Int, secondNum: Int): Option[Int] = {
     // Handling Exception Using if-else block
-    if(b==0) None
-    else Some(a/b)
+    if(secondNum==0) None
+    else Some(firstNum/secondNum)
   }
 }
 
