@@ -8,5 +8,5 @@ lazy val root = (project in file("."))
   .settings(
     name := "ScalaBasicTraining",
     libraryDependencies ++= Seq(
-      ScalaTestDependency)
-  )
+      ScalaTestDependency
+    ))
