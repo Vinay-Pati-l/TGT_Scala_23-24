@@ -22,7 +22,7 @@ class TGTrainingTest extends AnyFunSuite {
 
   test("MathsOperation.divide") {
     assert(new TGTraining(-500, -100).divide() == 5)
-    assert(new TGTraining(200, 0).divide().isInstanceOf[Failure[ArithmeticException]])
+    assert(new TGTraining(200, 0).divide() == Int.MaxValue) // division with zero
   }
 }
 

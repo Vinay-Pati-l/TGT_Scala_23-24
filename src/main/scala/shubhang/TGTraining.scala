@@ -14,11 +14,12 @@ class TGTraining(num1:Int,num2:Int) {
     num1 * num2
   }
 
-  def divide(): Any = {
+  def divide(): Int = {
     val result = Try(num1 / num2)
     result match {
       case Success(value) => value
-      case Failure(exception) => Failure(exception)
+      case Failure(exception) => println(exception)
+      Int.MaxValue// in case of division with zero
     }
   }
 }
