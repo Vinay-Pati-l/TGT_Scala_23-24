@@ -2,8 +2,6 @@ package m_madhav_reddy
 
 import org.scalatest.funsuite.AnyFunSuite
 
-import scala.util.Failure
-
 class BasicCalculatorTesting extends  AnyFunSuite {
 
   val basicCalculator = new BasicCalculator
@@ -53,11 +51,6 @@ class BasicCalculatorTesting extends  AnyFunSuite {
     assert(basicCalculator.divisionWithEither(5, 5).isRight)
 
   }
-
-
-
-
-
 
 }
 
