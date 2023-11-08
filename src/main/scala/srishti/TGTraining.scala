@@ -36,14 +36,3 @@ class TGTraining {
     else Some(firstNum/secondNum)
   }
 }
-
-object Main
-{
-  //  Main Function
-  def main(args: Array[String]): Unit = {
-    println(s"Addition of 21 and 10 is: ${new TGTraining().add(21,10)}")
-    println(s"Subtraction of 32 and 10 is: ${new TGTraining().subtract(32,10)}")
-    println(s"Multiplication of 5 and 6 is: ${new TGTraining().multiply(5,6)}")
-    println(s"Division of 10 and 0 is: ${new TGTraining().divideTryCatch(10,0)}")
-  }
-}
