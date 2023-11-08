@@ -2,16 +2,16 @@ package kushagra
 
 class CalculationOperations {
 
-  def addition(num1: Long, num2: Long): Long = {
-    return (num1 + num2)
+  def addition(numOne: Long, numTwo: Long): Long = {
+    return (numOne + numTwo)
   }
 
-  def difference(num1: Long, num2: Long): Long = {
-    return (num1 - num2)
+  def difference(numOne: Long, numTwo: Long): Long = {
+    return (numOne - numTwo)
   }
 
-  def product(num1: Long, num2: Long): Long = {
-    return (num1 * num2)
+  def product(numOne: Long, numTwo: Long): Long = {
+    return (numOne * numTwo)
   }
 
   // dividend is taken in Double to ensure the calculation happens
