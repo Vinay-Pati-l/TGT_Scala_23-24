@@ -11,7 +11,7 @@ class BasicCalculatorTest extends AnyFunSuite {
     assert(basicCalculator.calculate(10, 5, "Subtraction") == Right(5.0))
     assert(basicCalculator.calculate(10, 5, "Multiplication") == Right(50.0))
     assert(basicCalculator.calculate(10, 5, "Division") == Right(2.0))
-    assert(basicCalculator.calculate(10, 5, "Modulus") == Right(2.0))
+    assert(basicCalculator.calculate(10, 5, "Modulus") == Right(0.0))
   }
 
   test("Negative number addition test cases") {
