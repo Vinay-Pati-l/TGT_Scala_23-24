@@ -18,13 +18,13 @@ class BasicCalculator {
     }
   }
 
-  private def division(value1: Double, value2: Double): Either[ErrorInCalculations, Double] = {
-    if (value2 != 0) Right(value1 / value2)
+  private def division(valueOne: Double, valueTwo: Double): Either[ErrorInCalculations, Double] = {
+    if (valueTwo != 0) Right(valueOne / valueTwo)
     else Left(DivisionByZeroError("Division by 0 is not allowed!"))
   }
 
-  private def modulus(value1: Double, value2: Double): Either[ErrorInCalculations, Double] = {
-    if (value2 != 0) Right(value1 % value2)
+  private def modulus(valueOne: Double, valueTwo: Double): Either[ErrorInCalculations, Double] = {
+    if (valueTwo != 0) Right(valueOne % valueTwo)
     else Left(DivisionByZeroError("Division by 0 is not allowed!"))
   }
 }
