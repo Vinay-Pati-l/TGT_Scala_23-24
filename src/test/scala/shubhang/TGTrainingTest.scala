@@ -2,27 +2,27 @@ package shubhang
 
 import org.scalatest.funsuite.AnyFunSuite
 
-import scala.util.Failure
 
 class TGTrainingTest extends AnyFunSuite {
+  var trainingObject = new TGTraining
   test("TGTraining.add") {
-    assert(new TGTraining(3, 4).add() === 7)
-    assert(new TGTraining(-3, 9).add() === 6)
+    assert(trainingObject.add(3,4) === 7)
+    assert(trainingObject.add(-3,9) === 6)
   }
 
-  test("MathsOperation.subtract") {
-    assert(new TGTraining(5, 2).subtract() === 3)
-    assert(new TGTraining(-5, -2).subtract() === -3)
+  test("TGTraining.subtract") {
+    assert(trainingObject.subtract(5,2) === 3)
+    assert(trainingObject.subtract(-5,-2) === -3)
   }
 
-  test("MathsOperation.multiply") {
-    assert(new TGTraining(5, 2).multiply() === 10)
-    assert(new TGTraining(-5, -7).multiply() === 35)
+  test("TGTraining.multiply") {
+    assert(trainingObject.multiply(5,2) === 10)
+    assert(trainingObject.multiply(-5,-7) === 35)
   }
 
-  test("MathsOperation.divide") {
-    assert(new TGTraining(-500, -100).divide() == 5)
-    assert(new TGTraining(200, 0).divide() == Int.MaxValue) // division with zero
+  test("TGTraining.divide") {
+    assert(trainingObject.divide(-500,-100) == 5)
+    assert(trainingObject.divide(200,0) == Int.MaxValue) // division with zero
   }
 }
 

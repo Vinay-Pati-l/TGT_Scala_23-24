@@ -1,20 +1,20 @@
 package shubhang
 import scala.util.{Success,Failure, Try}
 
-class TGTraining(num1:Int,num2:Int) {
-  def add(): Int = {
+class TGTraining() {
+  def add(num1:Int,num2:Int): Int = {
     num1 + num2
   }
 
-  def subtract(): Int = {
+  def subtract(num1:Int,num2:Int): Int = {
     num1 - num2
   }
 
-  def multiply(): Int = {
+  def multiply(num1:Int,num2:Int): Int = {
     num1 * num2
   }
 
-  def divide(): Int = {
+  def divide(num1:Int,num2:Int): Int = {
     val result = Try(num1 / num2)
     result match {
       case Success(value) => value
