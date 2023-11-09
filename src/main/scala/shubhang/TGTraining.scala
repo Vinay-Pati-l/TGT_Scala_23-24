@@ -19,7 +19,7 @@ class TGTraining() {
     result match {
       case Success(value) => value
       case Failure(exception) => println(exception)
-      Int.MaxValue// in case of division with zero
+      Int.MaxValue// in case of division with zero return a undefined value
     }
   }
 }

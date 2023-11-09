@@ -22,7 +22,7 @@ class TGTrainingTest extends AnyFunSuite {
 
   test("TGTraining.divide") {
     assert(trainingObject.divide(-500,-100) == 5)
-    assert(trainingObject.divide(200,0) == Int.MaxValue) // division with zero
+    assert(trainingObject.divide(200,0) == Int.MaxValue) // division with zero it gets an undefined value
   }
 }
 
