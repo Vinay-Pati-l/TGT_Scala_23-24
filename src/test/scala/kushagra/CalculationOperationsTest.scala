@@ -7,7 +7,8 @@ import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 
 class CalculationOperationsTest extends AnyFunSuite with Matchers {
-  val calculationOperations = new CalculationOperations()
+
+  private val calculationOperations = new CalculationOperations()
 
   test("Addition test for Negative values") {
     assert(calculationOperations.addition(-63, -98) == -161)

@@ -2,7 +2,7 @@ package harshida_shaily
 
 import scala.util.{Failure, Try}
 
-class mathOperations {
+class MathOperations {
   def add(firstValue: Int, secondValue: Int): Int = firstValue+secondValue
 
   def subtract(firstValue: Int, secondValue: Int): Int = {

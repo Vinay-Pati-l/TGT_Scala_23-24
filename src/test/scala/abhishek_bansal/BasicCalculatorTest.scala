@@ -4,6 +4,7 @@ import abhishek_bansal.basic_calculator.{BasicCalculator, DivisionByZeroError, I
 import org.scalatest.funsuite.AnyFunSuite
 
 class BasicCalculatorTest extends AnyFunSuite {
+
   val basicCalculator = new BasicCalculator()
 
   test("All basic test cases") {

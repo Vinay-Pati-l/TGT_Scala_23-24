@@ -1,10 +1,11 @@
-import harshida_shaily.mathOperations
+package harshida_shaily
+
 import org.scalatest.flatspec.AsyncFlatSpecLike
 
 import scala.util.Success
-class mathOperationsTest extends AsyncFlatSpecLike {
+class MathOperationsTest extends AsyncFlatSpecLike {
 
-  val mathOperations=new mathOperations
+  val mathOperations = new MathOperations
 
   it should "add" in{
     assert(mathOperations.add(2,3)==5)
