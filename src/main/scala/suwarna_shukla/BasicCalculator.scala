@@ -13,7 +13,8 @@ class BasicCalculator {
     }
   }
 }
-
+/*
+We test the methods by separate test cases
 object Calculate
 {
   def main(args: Array[String]) =
@@ -39,4 +40,4 @@ object Calculate
         println("An unexpected exception occurred: " + ex.getMessage)
     }
   }
-}
+}*/
