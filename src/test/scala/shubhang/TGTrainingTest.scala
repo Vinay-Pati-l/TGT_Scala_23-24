@@ -4,7 +4,7 @@ import org.scalatest.funsuite.AnyFunSuite
 
 
 class TGTrainingTest extends AnyFunSuite {
-  var trainingObject = new TGTraining
+  val trainingObject = new TGTraining
   test("TGTraining.add") {
     assert(trainingObject.add(3,4) === 7)
     assert(trainingObject.add(-3,9) === 6)
