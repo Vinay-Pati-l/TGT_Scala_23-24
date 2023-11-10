@@ -21,7 +21,7 @@ class MathOperation {
   def division(firstVal: Double, secondVal: Double): Double = {
     Try{
       if(secondVal == 0){
-        throw new ArithmeticException(("divided by zero not allowed"))
+        throw new ArithmeticException("divided by zero not allowed")
       }
       firstVal / secondVal
     }
